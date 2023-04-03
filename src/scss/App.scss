@@ -1,0 +1,65 @@
+.body-container {
+  margin: 20px auto;
+}
+.system-logs {
+  min-height: 70vh;
+  .log-item {
+    margin-bottom: 10px;
+    .log-title {
+      color: blue;
+    }
+    .attention {
+      color: red;
+    }
+    .btn {
+      margin-right: 5px;
+    }
+  }
+  .pagination {
+    .page-item {
+      margin: auto 5px;
+    }
+  }
+}
+
+.tech-modal {
+  .tech-list {
+    list-style: none;
+
+    .tech {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.toast-msg {
+  display: block;
+}
+.toast-container {
+  svg {
+    display: block;
+    margin: 5px auto;
+  }
+  .toast-header {
+    padding-top: 0;
+    strong {
+      margin: 0 auto;
+    }
+  }
+  .toast-body {
+    text-align: center;
+  }
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row-reverse;
+
+  .btn-add,
+  .btn-add-user {
+    margin-right: 2px;
+  }
+}

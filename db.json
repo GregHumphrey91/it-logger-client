@@ -1,0 +1,33 @@
+{
+  "logs": [
+    {
+      "message": "This is a log",
+      "attention": false,
+      "tech": "Sam Smith",
+      "date": "2023-04-02T16:39:06.376Z",
+      "id": 1
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe"
+    },
+    {
+      "id": 2,
+      "firstName": "Sam",
+      "lastName": "Smith"
+    },
+    {
+      "id": 3,
+      "firstName": "Sara",
+      "lastName": "Wilson"
+    },
+    {
+      "firstName": "Raymond",
+      "lastName": "Romano",
+      "id": 4
+    }
+  ]
+}

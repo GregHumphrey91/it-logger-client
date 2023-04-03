@@ -1,0 +1,4 @@
+.system-logs .log-item {
+  margin-bottom: 10px; }
+  .system-logs .log-item .attention {
+    color: red; }

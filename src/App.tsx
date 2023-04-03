@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from 'react-redux';
+import { Container } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './scss/App.scss';
+import Navbar from './components/layout/NavigationMenu';
+import Logs from './components/logs/Logs';
+import AddBtn from './components/layout/AddBtn';
+import AddTech from './components/techs/AddTech';
+import TechListModal from './components/techs/TechListModal';
+import store from './store';
+import ToastMessage from './components/layout/ToastMessage';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Navbar />
+        <ToastMessage />
+        <Container className="body-container">
+          <Logs />
+        </Container>
+        <Container className="footer-container">
+          <TechListModal />
+          <AddBtn />
+          <AddTech />
+        </Container>
+      </div>
+    </Provider>
   );
-}
+};
 
 export default App;
